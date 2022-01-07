@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -26,37 +27,41 @@
         <button id="subscription">
           <strong>Try it free 7 days </strong>then $20/mo. thereafter
         </button>
-        <form class="form">
+        <form class="form" id="form-field">
           <div class="form-field">
             <label for="first name"></label>
             <input
+              id="firstname"
               type="text"
               name="firstname"
               placeholder="First name"
-              required=""
             />
+            <div class="error">&nbsp;</div>
           </div>
           <div class="form-field">
             <label for="last name"></label>
             <input
+              id="lastname"
               type="text"
               name="lastname"
               placeholder="Last name"
-              required=""
             />
+            <div class="error">&nbsp;</div>
           </div>
           <div class="form-field">
             <label for="Email address"></label>
-            <input type="email" name="email" placeholder="Email" required="" />
+            <input id="email" type="text" name="email" placeholder="Email" />
+            <div class="error">&nbsp;</div>
           </div>
           <div class="form-field">
             <label for="Password"></label>
             <input
+              id="password"
               type="password"
               name="email"
               placeholder="Password"
-              required=""
             />
+            <div class="error">&nbsp;</div>
           </div>
           <button id="trail-button">CLAIM YOUR FREE TRIAL</button>
           <p class="form-terms">
