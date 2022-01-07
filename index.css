@@ -1,0 +1,141 @@
+:root {
+  --pink: #ff7979;
+  --green: #38cc8b;
+  --purple: #5e54a4;
+  --dark-gray: #3d3b48;
+  --white-text: #fff;
+  --faded-dark: rgba(0, 0, 0, 0.14688);
+  --faded-dark-text: #bab7d4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--pink);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: auto;
+  height: 100%;
+  padding: 5rem 3rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.intro,
+.form-content {
+  width: auto;
+  color: var(--white-text);
+}
+
+.intro > p {
+  text-align: center;
+}
+
+.intro p:first-child {
+  font-size: calc(2rem - 4px);
+  font-weight: bolder;
+  width: fit-content;
+  margin: 0 auto 20px auto;
+}
+
+.intro p:last-child {
+  margin-bottom: 25px;
+}
+
+.form-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+#subscription {
+  background-color: var(--purple);
+  color: var(--white-text);
+  padding: 1rem 4rem;
+  text-align: center;
+  border: 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px var(--faded-dark);
+}
+
+.form {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--white-text);
+  width: auto;
+}
+
+.form-field {
+  width: auto;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+#trail-button {
+  width: 100%;
+  padding: 1rem 3rem;
+  color: var(--white-text);
+  border: 0;
+  background-color: var(--green);
+  border-radius: 10px;
+  box-shadow: inset 0px -4px 0px var(--faded-dark);
+}
+
+.form-terms {
+  color: var(--faded-dark-text);
+  font-size: 0.8rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-terms a {
+  color: var(--pink);
+  font-weight: bolder;
+}
+
+@media (min-width: 950px) {
+  .wrapper {
+    flex-flow: row nowrap;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  .intro,
+  .form-content {
+    flex: 1;
+  }
+
+  .intro p:first-child {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 900;
+  }
+  .intro p {
+    margin-inline: 0px !important;
+    text-align: left;
+  }
+
+  .form-content {
+    justify-content: flex-start;
+  }
+}
